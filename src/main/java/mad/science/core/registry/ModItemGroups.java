@@ -1,4 +1,4 @@
-package mad.science.core.items;
+package mad.science.core.registry;
 
 import mad.science.core.MadScience;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;

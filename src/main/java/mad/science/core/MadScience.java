@@ -1,7 +1,9 @@
 package mad.science.core;
 
-import mad.science.core.items.ModItemGroups;
-import mad.science.core.items.ModItems;
+import mad.science.core.event.CommonEvents;
+import mad.science.core.registry.ModCommands;
+import mad.science.core.registry.ModItemGroups;
+import mad.science.core.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -13,8 +15,12 @@ public class MadScience implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		// Registries
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModCommands.init();
 
+		// Events
+		CommonEvents.init();
 	}
 }
