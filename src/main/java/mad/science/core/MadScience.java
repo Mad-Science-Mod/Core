@@ -1,6 +1,7 @@
 package mad.science.core;
 
 import mad.science.core.event.CommonEvents;
+import mad.science.core.registry.ModBlocks;
 import mad.science.core.registry.ModCommands;
 import mad.science.core.registry.ModItemGroups;
 import mad.science.core.registry.ModItems;
@@ -11,13 +12,14 @@ import org.slf4j.LoggerFactory;
 
 public class MadScience implements ModInitializer {
 	public static final String MODID = "mad-science";
-    public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
+	public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
 
 	@Override
 	public void onInitialize() {
 		// Registries
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 		ModCommands.init();
 
 		// Events

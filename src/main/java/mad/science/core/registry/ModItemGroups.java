@@ -13,9 +13,13 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
     public static ItemGroup MAD_SCIENCE = Registry.register(Registries.ITEM_GROUP, new Identifier(MadScience.MODID, "mad_science"),
             FabricItemGroup.builder().displayName(Text.translatable("Mad Science"))
-                    .icon(() -> new ItemStack(Items.IRON_BLOCK)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModBlocks.TUBEROUS_DIRT)).entries((displayContext, entries) -> {
+
+                        // Food Items
                         entries.add(ModItems.FOOD);
-                        entries.add(Items.ITEM_FRAME);
+
+                        // Ore Items
+                        entries.add(ModBlocks.TUBEROUS_DIRT);
                     }).build());
 
     public static void registerItemGroups() {
