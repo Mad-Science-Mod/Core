@@ -19,7 +19,7 @@ public abstract class InGameHudMixin {
     @Redirect(method = "renderStatusBars", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/hud/InGameHud;getHeartCount(Lnet/minecraft/entity/LivingEntity;)I"))
     private int hideHungerIfMad(InGameHud instance, LivingEntity entity) {
         PlayerEntity player = this.getCameraPlayer();
-        if (CoreUtil.getMadness(player) >= 200) {
+        if (CoreUtil.getMadness(player) >= 150) {
             return 2;
         }
         return this.getHeartCount(entity);
