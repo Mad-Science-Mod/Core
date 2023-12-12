@@ -46,7 +46,7 @@ public class MadnessComponent implements AutoSyncedComponent, ServerTickingCompo
             }
 
             // Permanent hunger
-            if (this.getMadness() >= 200) {
+            if (this.getMadness() >= 250) {
                 this.player.addStatusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 30, 2, true, false));
             }
         }
