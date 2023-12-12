@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "mad-science:item/food"
+    "layer0": "mad_science:item/food"
   }
 }

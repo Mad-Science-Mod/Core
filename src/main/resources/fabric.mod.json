@@ -12,7 +12,7 @@
 		"sources": "https://github.com/Mad-Science-Mod/Core"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/mad-science/icon.png",
+	"icon": "assets/mad_science/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -23,7 +23,7 @@
 		]
 	},
 	"mixins": [
-		"mad-science.mixins.json"
+      "mad_science.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.1",
@@ -33,7 +33,7 @@
 	},
 	"custom": {
 		"cardinal-components": [
-			"mad-science:madness"
+			"mad_science:madness"
 		]
 	}
 }

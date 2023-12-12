@@ -1,0 +1,13 @@
+{
+  "command.mad_science.get_madness": "%s's madness is %s",
+  "command.mad_science.set_madness": "Set %s's madness to %s",
+
+  "item.mad_science.food": "\"food\"",
+  "item.mad_science.bit": "Bit",
+  "item.mad_science.void_dust": "Void Dust",
+  "item.mad_science.fractal" : "Fractal",
+
+  "block.mad_science.fractal_ore": "Fractal Ore",
+  "block.mad_science.shadowsilk_ore": "Shadowsilk Ore",
+  "block.mad_science.tuberous_dirt": "Tuberous Dirt"
+}

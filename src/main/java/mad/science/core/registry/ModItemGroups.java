@@ -14,12 +14,18 @@ public class ModItemGroups {
     public static ItemGroup MAD_SCIENCE = Registry.register(Registries.ITEM_GROUP, new Identifier(MadScience.MODID, "mad_science"),
             FabricItemGroup.builder().displayName(Text.translatable("Mad Science"))
                     .icon(() -> new ItemStack(ModBlocks.TUBEROUS_DIRT)).entries((displayContext, entries) -> {
+                        // Components
+                        entries.add(ModItems.BIT);
+                        entries.add(ModItems.FRACTAL);
+                        entries.add(ModItems.VOID_DUST);
 
                         // Food Items
                         entries.add(ModItems.FOOD);
 
-                        // Ore Items
+                        // Ore Items In Order (dirt, stone, deepslate)
                         entries.add(ModBlocks.TUBEROUS_DIRT);
+                        entries.add(ModBlocks.FRACTAL_ORE);
+                        entries.add(ModBlocks.SHADOWSILK_ORE);
                     }).build());
 
     public static void registerItemGroups() {
