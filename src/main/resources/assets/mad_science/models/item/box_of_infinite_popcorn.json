@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mad_science:item/box_of_infinite_popcorn"
+  }
+}
