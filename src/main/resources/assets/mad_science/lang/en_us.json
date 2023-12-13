@@ -6,8 +6,17 @@
   "item.mad_science.bit": "Bit",
   "item.mad_science.void_dust": "Void Dust",
   "item.mad_science.fractal" : "Fractal",
+  "item.mad_science.clockwork" : "Clockwork",
+  "item.mad_science.clockwork_heart" : "Clockwork Heart",
+  "item.mad_science.clock_hand" : "Clock Hand",
+  "item.mad_science.control_circuit" : "Control Circuit",
+  "item.mad_science.lapis_laced_circuit" : "Lapis Laced Circuit",
+  "item.mad_science.projector" : "Projector",
 
   "block.mad_science.fractal_ore": "Fractal Ore",
   "block.mad_science.shadowsilk_ore": "Shadowsilk Ore",
-  "block.mad_science.tuberous_dirt": "Tuberous Dirt"
+  "block.mad_science.tuberous_dirt": "Tuberous Dirt",
+  "block.mad_science.frozen_fire": "Frozen Fire",
+
+  "status_effect.mad_science.shadowless": "Shadowless"
 }
