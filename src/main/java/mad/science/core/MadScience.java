@@ -1,10 +1,7 @@
 package mad.science.core;
 
 import mad.science.core.event.CommonEvents;
-import mad.science.core.registry.ModBlocks;
-import mad.science.core.registry.ModCommands;
-import mad.science.core.registry.ModItemGroups;
-import mad.science.core.registry.ModItems;
+import mad.science.core.registry.*;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
@@ -32,6 +29,7 @@ public class MadScience implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModCommands.init();
+		ModStatusEffects.init();
 
 		// Events
 		CommonEvents.init();
