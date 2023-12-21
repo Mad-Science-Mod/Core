@@ -1,22 +1,15 @@
 package mad.science.core.statuseffects;
 
-import net.fabricmc.fabric.mixin.client.rendering.EntityRenderersMixin;
-import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.random.Random;
 
 public class Shadowless extends StatusEffect {
-    protected final Random random;
 
     public Shadowless() {
-        super(StatusEffectCategory.HARMFUL,
-                0);
-        this.random = Random.create();
+        super(StatusEffectCategory.HARMFUL, 0);
     }
 
     @Override
@@ -29,7 +22,7 @@ public class Shadowless extends StatusEffect {
             float f = entity.getBrightnessAtEyes();
             BlockPos blockPos = BlockPos.ofFloored(entity.getX(), entity.getEyeY(), entity.getZ());
             boolean bl = entity.isWet() || entity.inPowderSnow || entity.wasInPowderSnow;
-            if (f > 0.5F && this.random.nextFloat() * 30.0F < (f - 0.4F) * 2.0F && !bl && entity.getWorld().isSkyVisible(blockPos)) {
+            if (f > 0.5F && entity.getWorld().getRandom().nextFloat() * 30.0F < (f - 0.4F) * 2.0F && !bl && entity.getWorld().isSkyVisible(blockPos)) {
                 return true;
             }
         }
