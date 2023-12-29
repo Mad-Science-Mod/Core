@@ -9,7 +9,7 @@ import net.minecraft.util.math.BlockPos;
 public class Shadowless extends StatusEffect {
 
     public Shadowless() {
-        super(StatusEffectCategory.HARMFUL, 0);
+        super(StatusEffectCategory.HARMFUL, 000000);
     }
 
     @Override

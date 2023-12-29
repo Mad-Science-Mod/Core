@@ -9,15 +9,28 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item FOOD = registerItem("food",
-            new Item((new Item.Settings().food(FoodComponents.COOKIE))));
 
+    //Tools
+
+
+    //Metals
+
+
+    //Orbs
+
+
+    //Stars
+
+
+    // Exotic Materials
     public static final Item VOID_DUST = registerItem("void_dust",
             new Item(new FabricItemSettings()));
     public static final Item FRACTAL = registerItem("fractal",
             new Item(new FabricItemSettings()));
     public static final Item BIT = registerItem("bit",
             new Item(new FabricItemSettings()));
+
+    //Components
     public static final Item CLOCKWORK = registerItem("clockwork",
             new Item(new FabricItemSettings()));
     public static final Item CLOCKWORK_HEART = registerItem("clockwork_heart",
@@ -31,6 +44,9 @@ public class ModItems {
     public static final Item PROJECTOR = registerItem("projector",
             new Item(new FabricItemSettings()));
 
+    // Foods
+    public static final Item FOOD = registerItem("food",
+            new Item((new Item.Settings().food(FoodComponents.COOKIE))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(MadScience.MODID, name), item);
